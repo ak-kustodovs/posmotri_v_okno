@@ -18,6 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -74,22 +75,29 @@ ol {
   align-items: flex-end;
 }
 
+.content__details {
+  display: flex;
+  flex-direction: column;
+}
+
 .content__list {
   position: relative;
-  overflow: auto;
+  overflow:  hidden auto;
   height: 298px;
-  width: 399px;
+  width: 400px;
 }
 
 .content__list-item:not(:last-child)
 {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .content__video-card {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 394px;
+  height: 103px;
 }
 
 .content__video-card-thumbnail {
@@ -108,7 +116,7 @@ ol {
   font-size: 18px; 
   font-weight: normal;
   line-height: normal;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -117,7 +125,7 @@ ol {
   line-height: 71px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .content__accent {
@@ -131,12 +139,13 @@ ol {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 6px;
+  line-height: 100%;
 }
 
 .content__video-card-description {
   font-size: 18px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 90%;
   color: inherit;
 }
 
@@ -159,11 +168,11 @@ ol {
   font-weight: normal;
   font-size: 18px;
   appearance: none;
-  width: 225px;
+  min-width: 225px;
+  margin: 2px 0 0 0; 
 }
 
-.button
-{
+.button {
   border: 1px solid white;
   background-color: transparent;
   font-family: Fira Sans Condensed, sans-serif;
@@ -181,7 +190,7 @@ ol {
 }
 
 .more-button {
-  width: 398px;
+  width: 390px;
 }
 
 .content__card-link {
@@ -222,7 +231,7 @@ ol {
   margin: 2px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
